@@ -5,7 +5,7 @@ export default async (_req, res, path) => {
     try {
         if (path !== '/join') return res.redirect('/join');
 
-        const response = await fetch(`https://www.gimkit.com/join`);
+        const response = await fetch(`https://www.gimkit.com/join/68ec696486505effc47c7577`);
         let html = await response.text();
 
         ['content-type', 'set-cookie'].forEach((header) => {
